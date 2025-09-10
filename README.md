@@ -1,97 +1,53 @@
-OOP Student-Teacher Management System (Java)
-Project Overview
+# OOP Student-Teacher Management System
 
-This is a console-based Java application that manages students and teachers with role-specific operations. Users can enter personal details, update information, and manage role-specific data such as GPA, study level, salary, bonuses, and working hours.
+A **Java console application** that allows management of **students and teachers** using **Object-Oriented Programming concepts** like inheritance, encapsulation, and polymorphism.
 
-The project was designed to practice Object-Oriented Programming (OOP) concepts including classes, inheritance, encapsulation, and polymorphism. It demonstrates how to create modular and reusable code while handling complex menu-driven interactions.
+## Features
 
-Features
+- Add and manage **Student information**:
+  - Personal info (name, ID, age, email, phone)
+  - Study info (study level, GPA)
+- Add and manage **Teacher information**:
+  - Personal info (name, ID, age, email, phone)
+  - Teaching info (subject, class number, salary)
+  - Two categories: **monthly paid** and **hourly paid**
+- Edit and update all personal and professional information via interactive menus.
+- Easy-to-use **console interface** with nested menus for better organization.
 
-Role-Based Menu System
+## Classes Overview
 
-Student menu: Personal info, study info (GPA, study level)
+- **Person**: Base class with personal info.
+- **Student**: Inherits from `Person`, adds study info.
+- **Teacher**: Inherits from `Person`, adds teaching info.
+- **Monthly_T / Hourly_T**: Extend `Teacher` to handle different salary types.
+- **App**: Main class with interactive menu to manage students and teachers.
 
-Teacher menu: Personal info, teaching info (subject, class number)
+## How to Run
 
-Teacher categories: Hourly or Monthly paid with salary management
+1. Make sure you have **Java JDK** installed.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/AmirAlward/OOP_Student_Teacher_System.git
+Navigate to the src folder:
 
-Dynamic Data Management
+bash
+Copy code
+cd OOP_Student_Teacher_System/src
+Compile the Java files:
 
-Edit personal info: name, ID, email, phone, age
+bash
+Copy code
+javac *.java
+Run the application:
 
-Edit academic info: GPA, study level
-
-Edit salary info: salary, bonus, working hours
-
-OOP Concepts Applied
-
-Classes and objects: Person, Student, Teacher, Hourly_T, Monthly_T, App
-
-Inheritance: Student and Teacher extend Person
-
-Polymorphism: Overridden menu methods for Teacher subclasses
-
-Encapsulation: Private fields with getters/setters
-
-Getting Started
-Prerequisites
-
-Java JDK 8 or higher installed
-
-IDE or text editor (Eclipse, IntelliJ IDEA, NetBeans, VS Code with Java extension)
-
-How to Run
-
-Clone the repository or download the project files.
-
-Open the project in your Java IDE.
-
-Compile all .java files.
-
-Run App.java to start the program.
-
-Navigate the console menus using the indicated letters (a, b, e, etc.).
-
-Usage Example
-
-Choose user type: Student (a) or Teacher (b)
-
-Enter first name, last name, and ID
-
-For students: manage personal info or study info
-
-For teachers: select category (Hourly/Monthly) and manage personal, teaching, or salary info
-
-Exit any menu by pressing e
-
+bash
+Copy code
+java App
 Screenshots
+(Optional: Add screenshots of your program running here)
 
-(Add screenshots of your console here)
+GitHub Repository
+OOP Student-Teacher Management System
 
-student_menu.png – Shows student menu
-
-teacher_menu.png – Shows teacher menu
-
-salary_menu.png – Shows teacher salary menu
-
-Skills Demonstrated
-
-Java OOP: Classes, Objects, Inheritance, Polymorphism, Encapsulation
-
-Modular programming and structured code
-
-Problem-solving and logical thinking
-
-Console-based UI design
-
-Future Improvements
-
-Add file-based data storage to save info between sessions
-
-Implement GUI version using JavaFX
-
-Add validation checks for inputs (e.g., valid email, ID, GPA range)
-
-License
-
-This project is free to use for learning purposes.
+Author: Amir Alward
+Course: Object-Oriented Programming (Java)
